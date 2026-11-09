@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+.home-page,
+.about-page,
+.gallery-page,
+.services-page,
+.contact-page,
+.table-page {
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.home-page,
+.about-page,
+.gallery-page,
+.services-page,
+.contact-page {
+  background-color: #064257;
+}
+
+.gallery-page {
+  background-color: #1e768c;
+}
+
+.contact-page {
+  background-color: #1e768c;
+}
+
+.home-page p,
+.about-page p,
+.gallery-page p,
+.services-page p,
+.contact-page p {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+}
+
+.areas-table small {
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.areas-table {
+  border-spacing: 4px;
+}
+
+.areas-table td {
+  padding: 4px 12px;
+  color: white;
+  line-height: 1.1;
+  border-radius: 5px;
+}
+
+.areas-table .area-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.areas-table .icon-cell {
+  width: 70px;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent !important;
+}
+
+.areas-table .icon-cell img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+
+.areas-table tbody tr:nth-child(odd) td:not(.icon-cell) {
+  background-color: #064257;
+}
+
+.areas-table tbody tr:nth-child(even) td:not(.icon-cell) {
+  background-color: #21768d;
+}
+
+.site-header {
+  display: flex;
+  width: 100%;
+  min-height: 76px;
+  padding: 0 60px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  background-color: #152e41;
+  box-sizing: border-box;
+}
+
+.site-logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.site-logo img {
+  display: block;
+  width: 280px;
+  height: auto;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 20px;
+  justify-content: flex-end;
+  gap: 50px;
+  font-family: 'Urbanist', sans-serif;
+  line-height: 1;
+}
+
+.site-nav a {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #afedef;
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    flex-wrap: wrap;
+  }
+}
+
+.home-page {
+  color: white;
+}
+
+.home-page main {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 52vh;
+  padding: 90px 100px 0;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+.home-page .home-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-page main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(6, 66, 87, 0.45);
+}
+
+.home-page main > div {
+  position: relative;
+}
+
+.home-page main h1,
+.home-page main h2 {
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.home-page main h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.home-page main h2 {
+  font-size: 50px;
+}
+
+.home-page .dreams-delivered {
+  opacity: .7;
+}
+
+.home-page main p {
+  max-width: 900px;
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+.about-page,
+.gallery-page,
+.services-page,
+.contact-page {
+  color: white;
+  line-height: 2;
+}
+
+.about-page .one-column-layout {
+  width: min(1100px, 90%);
+  margin: 60px auto 0;
+}
+
+.about-page .home-column,
+.gallery-page .home-column,
+.services-page .home-column,
+.contact-page .home-column {
+  min-width: 0;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page .home-column {
+  padding: 0;
+}
+
+.about-page .about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-page .about-heading {
+  align-self: center;
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+
+.about-page .about-side {
+  width: 70%;
+  justify-self: end;
+  transform: translateY(24px);
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.gallery-page h1,
+.gallery-page h2,
+.gallery-page h3,
+.services-page h1,
+.services-page h2,
+.contact-page h1,
+.contact-page h2 {
+  display: block;
+}
+
+.about-page h1,
+.gallery-page h1,
+.services-page h1,
+.contact-page h1 {
+  max-width: none;
+  margin: 0;
+  font-size: 50px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.about-page .designer-word,
+.gallery-page .gallery-word,
+.services-page .services-word,
+.contact-page .contact-word {
+  opacity: .7;
+}
+
+.about-page h2,
+.gallery-page h2,
+.services-page h2,
+.contact-page h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.about-page .about-copy,
+.gallery-page .gallery-copy {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gallery-page .gallery-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  width: min(1100px, 90%);
+  margin: 60px auto 0;
+}
+
+.services-page .services-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  width: min(1100px, 90%);
+  margin: 60px auto 0;
+}
+
+.services-page .services-graphic {
+  display: block;
+  width: min(60%, 1020px);
+  height: auto;
+  opacity: 0.7;
+  justify-self: center;
+}
+
+.services-page .services-bottom {
+  min-height: 60vh;
+  margin-top: 30px;
+  padding: 40px 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.services-page .services-bottom-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.services-page .services-description {
+  grid-column: 1;
+  width: min(380px, 100%);
+  margin: 20px 0 0;
+  justify-self: end;
+  color: #152e41;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: right;
+}
+
+.services-page .services-table-content {
+  grid-column: 2;
+  width: min(500px, 100%);
+  justify-self: center;
+}
+
+.services-page .services-bottom h2 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 12px 0;
+  box-sizing: border-box;
+  color: #152e41;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.services-page .services-tagline {
+  margin: 0 0 12px;
+  color: #152e41;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.services-page .services-bottom .areas-table {
+  width: 100%;
+}
+
+.contact-page .contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  width: min(1100px, 90%);
+  margin: 60px auto 0;
+  min-height: 60vh;
+}
+
+.contact-page .contact-graphic {
+  display: block;
+  width: 119%;
+  max-width: 1150.09px;
+  height: auto;
+  justify-self: end;
+  transform: translateY(-15px);
+  margin-right: -60px;
+}
+
+.contact-page .contact-visual {
+  position: relative;
+  width: 100%;
+}
+
+.contact-page .contact-visual .contact-graphic {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  transform: none;
+}
+
+.contact-page .contact-form {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  display: grid;
+  gap: 8px;
+  width: min(320px, calc(100% - 32px));
+  padding: 18px;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: transparent;
+  color: #152e41;
+  box-sizing: border-box;
+}
+
+.contact-page .contact-form h2 {
+  color: white;
+  font-weight: 500;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px;
+  border: 1px solid #21768d;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.contact-page .contact-form button {
+  width: 120px;
+  min-height: 38px;
+  margin-top: 4px;
+  justify-self: center;
+  border: 0;
+  border-radius: 4px;
+  background-color: #1e768c;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.gallery-page .gallery-column {
+  width: 70%;
+  justify-self: end;
+  transform: translateY(24px);
+}
+
+.about-page .gallery-image-section,
+.gallery-page .gallery-image-section,
+.contact-page .gallery-image-section,
+.home-page .gallery-image-section {
+  margin-top: 30px;
+  padding: 24px 0 60px;
+  background-color: white;
+}
+
+.home-page .gallery-image-section {
+  margin-top: 0;
+}
+
+.about-page .gallery-image,
+.gallery-page .gallery-image,
+.contact-page .gallery-image,
+.home-page .gallery-image {
+  display: block;
+  width: min(1111.32px, 76.2048%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.services-page,
+.contact-page {
+  min-height: 100vh;
+}
+
+@media (max-width: 640px) {
+  .about-page h1,
+  .gallery-page h1,
+  .services-page h1,
+  .contact-page h1 {
+    white-space: normal;
+  }
+
+  .about-page .one-column-layout,
+  .gallery-page .gallery-layout,
+  .services-page .services-layout,
+  .contact-page .contact-layout {
+    margin: 30px auto;
+  }
+
+  .about-page .home-column,
+  .gallery-page .home-column,
+  .services-page .home-column,
+  .contact-page .home-column {
+    padding: 20px 0;
+  }
+
+  .about-page .about-heading {
+    padding: 20px 0;
+  }
+
+  .about-page .about-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-page .about-side {
+    width: 100%;
+    justify-self: stretch;
+    transform: none;
+  }
+
+  .gallery-page .gallery-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page .services-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page .services-bottom-content {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page .services-table-content {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .services-page .services-description {
+    grid-column: 1;
+  }
+
+  .services-page .services-description {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .contact-page .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page .contact-graphic {
+    width: min(85%, 1150.09px);
+    justify-self: center;
+    margin-right: 0;
+  }
+
+  .contact-page .contact-visual {
+    width: 100%;
+  }
+
+  .contact-page .contact-visual .contact-graphic {
+    margin: 0 auto;
+  }
+
+  .gallery-page .gallery-column {
+    width: 100%;
+    justify-self: stretch;
+    transform: none;
+  }
+
+  .gallery-page .home-column {
+    padding-bottom: 0;
+  }
+
+  .about-page .gallery-image,
+  .gallery-page .gallery-image,
+  .contact-page .gallery-image,
+  .home-page .gallery-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page main {
+    padding-right: 24px;
+    padding-left: 5%;
+  }
+}
