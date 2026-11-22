@@ -697,8 +697,8 @@ h3 {
 
 .lightbox img {
   display: block;
-  max-width: 80%;
-  max-height: 80vh;
+  max-width: 95%;
+  max-height: 90vh;
   width: auto;
   height: auto;
   padding: 25px;
@@ -720,4 +720,15 @@ h3 {
 
 .lightbox-close:hover {
   color: #afedef;
+}
+@media (max-width: 640px) {
+  .lightbox {
+    padding: 15px;
+  }
+
+  .lightbox img {
+    max-width: 100%;
+    max-height: 85vh;
+    padding: 12px;
+  }
 }
