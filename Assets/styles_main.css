@@ -673,6 +673,10 @@ h3 {
    ENLARGED IMAGE LIGHTBOX
 ================================= */
 
+/* =================================
+   ENLARGED IMAGE LIGHTBOX
+================================= */
+
 .lightbox {
   display: none;
   position: fixed;
@@ -680,9 +684,9 @@ h3 {
   z-index: 9999;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 40px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .lightbox:target {
@@ -691,10 +695,12 @@ h3 {
 
 .lightbox img {
   display: block;
-  max-width: 90%;
-  max-height: 85vh;
+  max-width: 80%;
+  max-height: 80vh;
   width: auto;
   height: auto;
+  padding: 25px;
+  box-sizing: border-box;
   object-fit: contain;
   background-color: white;
 }
@@ -703,7 +709,7 @@ h3 {
   position: absolute;
   top: 20px;
   right: 30px;
-  color: #152e41;
+  color: white;
   font-size: 42px;
   font-weight: 400;
   line-height: 1;
@@ -711,5 +717,5 @@ h3 {
 }
 
 .lightbox-close:hover {
-  color: #1e768c;
+  color: #afedef;
 }
