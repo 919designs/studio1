@@ -28,7 +28,7 @@ h3 {
   background-color: #1e768c;
 }
 .contact-details {
-  margin-top: 15px;
+  margin-top: 40px;
 }
 
 .contact-details p {
@@ -48,7 +48,9 @@ h3 {
 
 .contact-icon {
   margin-right: 8px;
-  color: #afedef;
+  color: white;
+  font-size: 24px;
+  vertical-align: middle;
 }
 .contact-page {
   background-color: #1e768c;
