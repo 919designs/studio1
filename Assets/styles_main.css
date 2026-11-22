@@ -218,7 +218,7 @@ h3 {
 }
 
 .about-page .one-column-layout {
-  width: 100%;
+  width: min(1100px, 90%);
   margin: 60px auto 0;
 }
 
@@ -733,5 +733,10 @@ h3 {
   }
 }
 .about-page .gallery-grid-section {
+  background-color: white;
+}
+.about-page .gallery-grid-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   background-color: white;
 }
