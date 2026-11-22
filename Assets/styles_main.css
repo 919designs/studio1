@@ -631,10 +631,12 @@ h3 {
   text-align: left;
 }
 
-.gallery-card img {
+.gallery-grid .gallery-card img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .gallery-caption {
