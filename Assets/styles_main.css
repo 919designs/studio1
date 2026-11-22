@@ -669,3 +669,47 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+/* =================================
+   ENLARGED IMAGE LIGHTBOX
+================================= */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox img {
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background-color: white;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #152e41;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.lightbox-close:hover {
+  color: #1e768c;
+}
