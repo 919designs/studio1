@@ -27,7 +27,29 @@ h3 {
 .gallery-page {
   background-color: #1e768c;
 }
+.contact-details {
+  margin-top: 15px;
+}
 
+.contact-details p {
+  margin: 5px 0;
+  line-height: 1.4;
+  color: white;
+}
+
+.contact-details a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #afedef;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  color: #afedef;
+}
 .contact-page {
   background-color: #1e768c;
 }
