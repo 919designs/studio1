@@ -683,6 +683,9 @@ h3 {
   font-size: 15px;
   font-weight: 500;
 }
+.gallery-intro-divider {
+  font-weight: 300;
+}
 
 .gallery-intro p {
   margin: 0;
