@@ -256,10 +256,12 @@ h3 {
 
 .home-page main p {
   max-width: 900px;
-  margin: 12px 0 0;
+  margin: 20px 0 0;
+  padding: 10px 12px;
   font-size: 14px;
   line-height: 1.8;
   text-transform: none;
+  box-sizing: border-box;
 }
 
 .about-page,
