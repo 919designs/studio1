@@ -734,9 +734,9 @@ h3 {
   background-color: white;
 }
 
-.lightbox-close {
+.lightbox .lightbox-close {
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   top: 20px;
   right: 30px;
